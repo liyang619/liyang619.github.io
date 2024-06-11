@@ -3,8 +3,14 @@
   contents:
     - name: Full Name
       value: Yang Li
+    - name: Role
+      value: PhD Candidate
+    - name: Email
+      value: yang.li-4@manchester.ac.uk
     - name: Languages
       value: Mandarin, English
+    - name: Summary
+      value: "A PhD Candidate studing on multi-agent learning and application of AI..."
 
 - title: Education
   type: time_table
@@ -16,8 +22,8 @@
         - Computer Science
         - title: Supervisor
           contents:
-            - [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) (main supervisor)
-            - [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en) (co-supervisor)
+            - Dr. Wei Pan (main supervisor)
+            - Prof. Angelo Cangelosi (co-supervisor)
     - title: Master
       institution: University of Chinese Academy of Sciences, China
       year: 2019-2022
@@ -25,8 +31,8 @@
         - M.Sc. in Information and Communication Engineering
         - title: Supervisor
           contents:
-            - [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) (main supervisor)
-            - [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN) (co-supervisor)
+            - Prof. Jun Wang (main supervisor)
+            - Prof. Yang Yang (co-supervisor)
     - title: Bachelor
       institution: Dalian University of Technology, China
       year: 2019-2022
