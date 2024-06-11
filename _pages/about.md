@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>The University of Manchester</a>. Manchester, UK. Email: yang.li-4@manchester.ac.uk
+subtitle: PhD Candidate, Dept of Computer Science, The University of Manchester, Manchester, UK.
 
 profile:
   align: right
