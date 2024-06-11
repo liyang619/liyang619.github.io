@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Keep going~
+subtitle: Keep going~~~
 
 profile:
   align: right
@@ -13,6 +13,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_co_papers: true # includes a list of papers marked as "selected_co={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
