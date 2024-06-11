@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-- Two papers are accepted by ICML2024.
+Two papers are accepted by ICML2024.
