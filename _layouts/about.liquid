@@ -62,6 +62,14 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}   
+    
+    <!-- Selected Co papers -->
+    {% if page.selected_co_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected co-authored publications</a>
+      </h2>
+      {% include selected_co_papers.liquid %}
     {% endif %}
 
     <!-- Social -->
