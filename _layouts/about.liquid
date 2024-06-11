@@ -43,7 +43,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit"; font-weight: bold;>News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,7 +51,7 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit; font-weight: bold;">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -59,7 +59,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}   
@@ -67,7 +67,7 @@ layout: default
     <!-- Selected Co papers -->
     {% if page.selected_co_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected co-authored publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-weight: bold;">Selected Co-authored Publications</a>
       </h2>
       {% include selected_co_papers.liquid %}
     {% endif %}
