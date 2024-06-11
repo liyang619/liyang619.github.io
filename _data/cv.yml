@@ -1,4 +1,4 @@
-- title: General Information
+- title: Basics
   type: map
   contents:
     - name: Full Name
@@ -11,21 +11,24 @@
   contents:
     - title: PhD
       institution: University of Manchester, UK
-      year: 2022-
+      year: 2022-Now
       description:
         - Computer Science
         - title: Supervisor
           contents:
-            - Wei Pan
+            - [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) (main supervisor)
+            - [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en) (co-supervisor)
     - title: Master
       institution: University of Chinese Academy of Sciences, China
       year: 2019-2022
       description:
         - M.Sc. in Information and Communication Engineering
-        - Supervised by Jun Wang and Yang Yang
+        - title: Supervisor
+          contents:
+            - [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) (main supervisor)
+            - [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN) (co-supervisor)
     - title: Bachelor
       institution: Dalian University of Technology, China
       year: 2019-2022
       description:
-        - B.Sc. in Digital Media Technology
-        - Supervised by Jun Wang and Yang Yang
+        - B.Sc. in Digital Media Technology (School of Software)
