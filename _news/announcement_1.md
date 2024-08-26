@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-"Tackling Cooperative Incompatibility for Zero-Shot Human-AI Coordination" is accepted by Journal of AI Research!!! Thanks all my co-authors~~~
+"Tackling Cooperative Incompatibility for Zero-Shot Human-AI Coordination" is accepted by Journal of AI Research (CCF-B, JCR Q2 journal)!!! Thanks all my co-authors~~~
 
