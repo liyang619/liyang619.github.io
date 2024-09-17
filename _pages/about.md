@@ -17,8 +17,8 @@ selected_co_papers: true # includes a list of papers marked as "selected_co={tru
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a doctoral student in Computer Science at the University of Manchester, with a particular emphasis on multi-agent learning and applications of AI. 
-I am supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). Before starting PhD journey, I obtained the Master degree in Information and Communication Engineering from the University of Chinese Academy of Sciences under [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and the Bachelor degree in Digital Media Technology from Dalian University of Technology.
 
-My recent research focuses on multi-agent learning in open-ended worlds, aiming to improve the adaptability of multi-agent systems to varying tasks, emergent on-the-fly co-players, and other evolving environments. The ultimate aim of my research is to advance multi-agent interaction in real-world applications where unpredictability is the norm.
+As a Ph.D. candidate in Computer Science at the University of Manchester, my research centers on the areas of human-AI/robot collaboration, multi-agent learning, and AI applications. I am driven by a passion for harnessing interdisciplinary knowledge, such as AI, game theory, and cognitive theory, to spark innovation in human-robot collaboration, with the ultimate goal of improving the quality of human life. In UoM, I am supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). Before starting PhD journey, I obtained the Master degree in Information and Communication Engineering from the University of Chinese Academy of Sciences under [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and the Bachelor degree in Digital Media Technology from Dalian University of Technology.
+
+
 
