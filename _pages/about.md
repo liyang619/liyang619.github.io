@@ -6,7 +6,7 @@ subtitle: Keep going~~~
 
 profile:
   align: right
-  image: prof_pic_color.jpg
+  image: no_photo.png
   image_circular: false # crops the image to make it circular
   more_info: > 
     
@@ -17,8 +17,20 @@ selected_co_papers: true # includes a list of papers marked as "selected_co={tru
 social: true # includes social icons at the bottom of the page
 ---
 
+## About Me
 
-As a Ph.D. candidate in Computer Science at the University of Manchester, my research centers on the areas of human-AI/robot collaboration, multi-agent learning, and AI applications. I am driven by a passion for harnessing interdisciplinary knowledge, such as AI, game theory, and cognitive theory, to spark innovation in human-robot collaboration, with the ultimate goal of improving the quality of human life. In UoM, I am supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). Before starting PhD journey, I obtained the Master degree in Information and Communication Engineering from the University of Chinese Academy of Sciences under [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and the Bachelor degree in Digital Media Technology from Dalian University of Technology.
+I will join the School of Computer Science at Shanghai Jiao Tong University in January 2026 as a Tenure-Track Assistant Professor (长聘教轨助理教授).  
+My research focuses on multi-agent systems, embodied intelligence, and AI applications especially in AI for Science and AI for Fusion.  
+I am broadly interested in developing embodied agents capable of reasoning, collaborating, adapting and acting effectively in complex real-world environments.
+
+I obtained my Ph.D. in Computer Science from the University of Manchester, supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en).  
+Before that, I received an M.Eng. in Information and Communication Engineering from the University of Chinese Academy of Sciences, advised by [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and a B.Eng. in Digital Media Technology from Dalian University of Technology.
 
 
+### Looking for Prospective Students
+
+I welcome highly motivated students interested in multi-agent systems, embodied intelligence, or AI for Science/Fusion to join my group.   
+If you are interested, please feel free to contact me!\
+
+**New position:** A Ph.D. position in AI for Fusion starting in early 2026, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en) . 
 
