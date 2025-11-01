@@ -26,7 +26,11 @@ I obtained my Ph.D. in Computer Science from the University of Manchester, super
 
 #### Looking for Prospective Students
 
-I welcome highly motivated students interested in multi-agent systems, embodied intelligence, or AI for Science/Fusion to join my group. If you are interested, please feel free to contact me (yang.li-4@outlook.com)!
+I welcome highly motivated students interested in multi-agent/robot systems, embodied intelligence, or AI for Science/Fusion to join my group. If you are interested, please feel free to contact me (yang.li-4@outlook.com)!
 
-**New position:** A Ph.D. position in AI for Fusion starting in 2026, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en) . 
+**PhD/Master positions are available:** 
+- Ph.D. position in multi-robot system and multi-agent system for 
+- A Ph.D. position in AI for Fusion starting in 2026, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en). 
+
+
 
