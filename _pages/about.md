@@ -6,7 +6,7 @@ subtitle: Keep going~~~
 
 profile:
   align: right
-  image: relax_yang.JPG
+  image: yang_bio.png
   image_circular: false # crops the image to make it circular
   more_info: > 
     
