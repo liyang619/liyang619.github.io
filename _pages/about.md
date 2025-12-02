@@ -6,7 +6,7 @@ subtitle: Keep going~~~
 
 profile:
   align: right
-  image: no_photo.png
+  image: relax_yang.JPG
   image_circular: false # crops the image to make it circular
   more_info: > 
     
@@ -29,7 +29,7 @@ I obtained my Ph.D. in Computer Science from the University of Manchester, super
 I welcome highly motivated students interested in multi-agent/robot systems, embodied intelligence, or AI for Science/Fusion to join my group. If you are interested, please feel free to contact me (yang.li-4@outlook.com)!
 
 **PhD/Master positions are available:** 
-- Ph.D. position in multi-robot system and multi-agent system for 
+- Ph.D. position in embodied AI, multi-agent/robot learning.
 - A Ph.D. position in AI for Fusion starting in 2026, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en). 
 
 
