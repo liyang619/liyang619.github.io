@@ -8,7 +8,7 @@ profile:
   align: right
   image: yang_bio.png
   image_circular: true # crops the image to make it circular
-  more_info: SEIEE, Building 3, Room 3-315 @ SJTU
+  more_info: SEIEE, Building 3, Room 3-315 @SJTU
     
 
 news: true # includes a list of news items
