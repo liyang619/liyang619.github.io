@@ -7,7 +7,7 @@ subtitle: Keep Going~
 profile:
   align: right
   image: yang_bio.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: SEIEE, Building 3, Room 3-315 \\ Email: yang.li.cs at sjtu dot edu dot cn
     
 
