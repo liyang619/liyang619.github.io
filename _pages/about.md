@@ -8,7 +8,7 @@ profile:
   align: right
   image: yang_bio.png
   image_circular: true # crops the image to make it circular
-  more_info: SEIEE, Building 3, Room 3-315 \\ Email: yang.li.cs at sjtu dot edu dot cn
+  more_info: SEIEE, Building 3, Room 3-315 @ SJTU
     
 
 news: true # includes a list of news items
@@ -26,7 +26,7 @@ Prior to joining SJTU, I served as a Research Scientist with the Agent Team at H
 
 #### Looking for Prospective Students
 
-I welcome highly motivated students interested in multi-agent/robot systems, embodied intelligence, or AI for Science/Fusion to join my group. If you are interested, please feel free to contact me (yang.li-4@outlook.com)!
+I welcome highly motivated students interested in multi-agent/robot systems, embodied intelligence, or AI for Science/Fusion to join my group. If you are interested, please feel free to contact me (yang.li.cs at sjtu dot edu dot cn)!
 
 **2026 PhD positions are available:** 
 - A Ph.D. position in embodied AI, multi-agent/robot learning starting in 2026 Sep, co-supervised with [Prof. Weinan Zhang](https://wnzhang.net/).
