@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Yang
 middle_name: 
 last_name: Li
-email: yang.li-4@manchester.ac.uk
+email: yang.li.cs@sjtu.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computer Science PhD Candidate at The University of Manchester. Research Interests include multi-agent system, multi-agent reinforcement learning, and application of AI.
+  Tenure-Track Assistant Professor at the John Hopcroft Center for Computer Science, Shanghai Jiao Tong University. Research interests include embodied multi-agent learning, AI4Science, and AI4Fusion.
 footer_text: >
   Thanks for your visit!!!
 keywords: 
@@ -298,8 +298,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Li]
+  first_name: [Yang]
 
   style: apa
   locale: en
