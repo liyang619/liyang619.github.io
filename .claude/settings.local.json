@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:ar5iv.org)",
+      "WebFetch(domain:paperswithcode.com)",
+      "WebSearch",
+      "Bash(pdftotext \"/mnt/c/Users/yangl/OneDrive/Desktop/liyang619.github.io/assets/paper/esa_2026.pdf\" - 2>/dev/null | head -100)",
+      "Bash(python3 -c \"\nimport subprocess\nresult = subprocess.run\\(['pdfinfo', '/mnt/c/Users/yangl/OneDrive/Desktop/liyang619.github.io/assets/paper/esa_2026.pdf'], capture_output=True, text=True\\)\nprint\\(result.stdout\\)\nprint\\(result.stderr\\)\n\")"
+    ]
+  }
+}
