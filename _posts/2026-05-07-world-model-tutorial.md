@@ -4,7 +4,8 @@ title: "World Model：从强化学习到具身智能的完整入门"
 date: 2026-05-07
 description: "一篇面向工程师和研究者的 world model tutorial：从定义、历史、学术路线、工业格局到机器人与自动驾驶落地。"
 tags: [world-model, embodied-ai, robotics, reinforcement-learning, video-generation]
-permalink: /world-model-tutorial/
+permalink: /wm/
+giscus_comments: true
 ---
 
 过去两年里，“世界模型”（World Model）突然变成了 AI 领域最拥挤也最混乱的词之一。
