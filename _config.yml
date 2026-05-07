@@ -145,15 +145,15 @@ pagination:
 giscus:
   repo: liyang619/liyang619.github.io
   repo_id: R_kgDOQNMV1A
-  category: Comments
-  category_id:
+  category: General
+  category_id: DIC_kwDOQNMV1M4C8gxC
   mapping: pathname
-  strict: 1
+  strict: 0
   reactions_enabled: 1
   input_position: bottom
   theme: preferred_color_scheme
   emit_metadata: 0
-  lang: en
+  lang: zh-CN
 
 # # Disqus comments (DEPRECATED)
 # disqus_shortname: al-folio # put your disqus shortname
