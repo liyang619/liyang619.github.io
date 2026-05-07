@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am serving as an Area Chair (AC) for [IROS 2026](https://iros2026.org/).
+I am serving as an AE for [IROS 2026](https://iros2026.org/).
