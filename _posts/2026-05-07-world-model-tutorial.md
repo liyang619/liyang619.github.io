@@ -47,6 +47,26 @@ WAM                       -> 把 future state 和 future action 联合建模
 
 ---
 
+## 目录
+
+- [1. 一句话定义：world model 是“可预测的环境”](#1-一句话定义world-model-是可预测的环境)
+- [2. 为什么 world model 又火了](#2-为什么-world-model-又火了)
+- [3. 广义世界模型与狭义世界模型](#3-广义世界模型与狭义世界模型)
+- [4. 学术脉络：从 World Models 到 Foundation World Model 与 WAM](#4-学术脉络从-world-models-到-foundation-world-model-与-wam)
+- [5. 今天的五条主流路线](#5-今天的五条主流路线)
+- [6. 工业界在押什么](#6-工业界在押什么)
+- [7. 机器人为什么比自动驾驶更难](#7-机器人为什么比自动驾驶更难)
+- [8. 从 world model 到 world action model](#8-从-world-model-到-world-action-model)
+- [9. 数据：world model 需要什么样的数据](#9-数据world-model-需要什么样的数据)
+- [10. 真实部署：从 world model 到机器人系统](#10-真实部署从-world-model-到机器人系统)
+- [11. 新手怎么入门：从代码、数据和实验开始](#11-新手怎么入门从代码数据和实验开始)
+- [12. 读完以后该怎么选方向](#12-读完以后该怎么选方向)
+- [一个总结](#一个总结)
+- [术语表](#术语表)
+- [References](#references)
+
+---
+
 ## 1. 一句话定义：world model 是“可预测的环境”
 
 最朴素的 world model 来自强化学习：
