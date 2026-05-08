@@ -22,17 +22,16 @@ social: true # includes social icons at the bottom of the page
 
 ## About Me
 
-I am a Tenure-Track Assistant Professor (长聘教轨助理教授) at the [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/about/overview/), Shanghai Jiao Tong University. My research focuses on embodied multi-agent learning and AI applications especially in AI4Science and AI4Fusion. My long-term research goal is to develop large-scale embodied agent system that can reason, collaborate, adapt, and act efficiently in complex real-world scenarios.
+I am a Tenure-Track Assistant Professor (长聘教轨助理教授) at the [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/about/overview/), Shanghai Jiao Tong University. My research focuses on embodied multi-agent learning and AI applications, especially in AI4Science. My long-term research goal is to develop large-scale embodied agent systems that can reason, collaborate, adapt, and act efficiently in complex real-world scenarios.
 
 Prior to joining SJTU, I was a Research Scientist with the Agent Team at Huawei London Research Center. I obtained my Ph.D. in Computer Science from the University of Manchester, supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). Before that, I received an M.Eng. in Information and Communication Engineering from the University of Chinese Academy of Sciences, jointly trained at [ShanghaiTech University](https://www.shanghaitech.edu.cn/), advised by [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and a B.Eng. in Digital Media Technology from Dalian University of Technology.
 
 #### Looking for Prospective Students
 
-I welcome highly motivated students (undergraduates/masters/PhDs/RAs) interested in multi-agent/robot systems, embodied AI, or AI for Science/Nuclear to join my group. If you are interested, please feel free to contact me (yang.li.cs at sjtu dot edu dot cn)!
+I welcome highly motivated students (undergraduates/masters/PhDs/RAs) interested in multi-agent/robot systems, embodied AI, or AI for Science/Nuclear to join my group. I also welcome interns and research assistants, especially for projects on multi-embodied AI and self-driving labs. If you are interested, please feel free to contact me (yang.li.cs at sjtu dot edu dot cn)!
 
-**2026 PhD positions are available:** 
-- A Ph.D. position in embodied AI, multi-agent/robot learning starting in 2026 Sep, co-supervised with [Prof. Weinan Zhang](https://wnzhang.net/).
-- A Ph.D. position in AI for Nuclear starting in 2026 Sep, and more Ph.D. positions in MAS and embodied AI, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en). 
+**PhD positions are available:** 
+- 2026 intake: **one** Ph.D. position in **AI for Nuclear / AI4Science**, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en).
+- 2027 intake: **two** Ph.D. positions in (multi-)embodied AI and AI4Science.
 
-
-
+Please include your CV, transcript, and a brief note about your research interests when reaching out. 
