@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180" role="img" aria-labelledby="title desc">
+  <title id="title">World model method atlas</title>
+  <desc id="desc">A compact atlas of major world-model methods and what each one predicts.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9 Z" fill="#475569"/></marker>
+    <style>
+      .bg{fill:#f8fafc}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:18}.head{fill:#0f172a;font:700 24px Arial,sans-serif}.sub{fill:#64748b;font:17px Arial,sans-serif}.txt{fill:#334155;font:18px Arial,sans-serif}.box{fill:#eef6ff;stroke:#9cc8f2;rx:10}.box2{fill:#fff7e8;stroke:#e5b66a;rx:10}.box3{fill:#effaf3;stroke:#78c59b;rx:10}.line{stroke:#475569;stroke-width:2.4;fill:none;marker-end:url(#arrow)}.tiny{fill:#475569;font:15px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="1180"/>
+  <text class="head" x="70" y="58">Method atlas: what each family predicts</text>
+  <text class="sub" x="70" y="88">Each card is a simplified method figure, redrawn for tutorial reading rather than exact implementation detail.</text>
+
+  <g transform="translate(60,125)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">World Models</text><text class="sub" x="25" y="65">VAE + MDN-RNN + controller</text>
+    <rect class="box" x="30" y="92" width="80" height="40"/><text class="tiny" x="49" y="117">pixels</text><path class="line" d="M110 112 L160 112"/><rect class="box2" x="160" y="92" width="80" height="40"/><text class="tiny" x="186" y="117">z</text><path class="line" d="M240 112 L290 112"/><rect class="box3" x="290" y="92" width="120" height="40"/><text class="tiny" x="315" y="117">action</text>
+  </g>
+  <g transform="translate(570,125)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">PlaNet / Dreamer</text><text class="sub" x="25" y="65">latent dynamics + imagined rollout</text>
+    <rect class="box" x="35" y="92" width="90" height="40"/><text class="tiny" x="56" y="117">obs</text><path class="line" d="M125 112 L175 112"/><rect class="box2" x="175" y="92" width="105" height="40"/><text class="tiny" x="195" y="117">RSSM</text><path class="line" d="M280 112 L330 112"/><rect class="box3" x="330" y="92" width="95" height="40"/><text class="tiny" x="348" y="117">actor</text>
+  </g>
+  <g transform="translate(1080,125)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">MuZero</text><text class="sub" x="25" y="65">decision-only latent model</text>
+    <rect class="box" x="35" y="92" width="95" height="40"/><text class="tiny" x="57" y="117">state</text><path class="line" d="M130 112 L180 112"/><rect class="box2" x="180" y="92" width="105" height="40"/><text class="tiny" x="205" y="117">latent</text><path class="line" d="M285 112 L335 112"/><rect class="box3" x="335" y="92" width="95" height="40"/><text class="tiny" x="350" y="117">value</text>
+  </g>
+
+  <g transform="translate(60,345)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">TD-MPC2</text><text class="sub" x="25" y="65">latent dynamics for continuous control</text>
+    <rect class="box" x="30" y="92" width="90" height="40"/><text class="tiny" x="52" y="117">s,a</text><path class="line" d="M120 112 L175 112"/><rect class="box2" x="175" y="92" width="105" height="40"/><text class="tiny" x="197" y="117">next z</text><path class="line" d="M280 112 L335 112"/><rect class="box3" x="335" y="92" width="90" height="40"/><text class="tiny" x="354" y="117">MPC</text>
+  </g>
+  <g transform="translate(570,345)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">IRIS / STORM / DIAMOND</text><text class="sub" x="25" y="65">token or diffusion video world models</text>
+    <rect class="box" x="30" y="92" width="110" height="40"/><text class="tiny" x="55" y="117">frames</text><path class="line" d="M140 112 L195 112"/><rect class="box2" x="195" y="92" width="95" height="40"/><text class="tiny" x="218" y="117">tokens</text><path class="line" d="M290 112 L345 112"/><rect class="box3" x="345" y="92" width="80" height="40"/><text class="tiny" x="360" y="117">video</text>
+  </g>
+  <g transform="translate(1080,345)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">JEPA / V-JEPA</text><text class="sub" x="25" y="65">predict future embeddings, not pixels</text>
+    <rect class="box" x="30" y="92" width="115" height="40"/><text class="tiny" x="54" y="117">context</text><path class="line" d="M145 112 L200 112"/><rect class="box2" x="200" y="92" width="110" height="40"/><text class="tiny" x="225" y="117">predict</text><path class="line" d="M310 112 L365 112"/><rect class="box3" x="365" y="92" width="65" height="40"/><text class="tiny" x="382" y="117">repr</text>
+  </g>
+
+  <g transform="translate(60,565)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">Genie / UniSim</text><text class="sub" x="25" y="65">controllable future video</text>
+    <rect class="box" x="30" y="92" width="95" height="40"/><text class="tiny" x="53" y="117">video</text><path class="line" d="M125 112 L185 112"/><rect class="box2" x="185" y="92" width="115" height="40"/><text class="tiny" x="206" y="117">latent a</text><path class="line" d="M300 112 L355 112"/><rect class="box3" x="355" y="92" width="75" height="40"/><text class="tiny" x="372" y="117">roll</text>
+  </g>
+  <g transform="translate(570,565)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">Cosmos</text><text class="sub" x="25" y="65">platform-scale world foundation model</text>
+    <rect class="box" x="30" y="92" width="100" height="40"/><text class="tiny" x="54" y="117">data</text><path class="line" d="M130 112 L185 112"/><rect class="box2" x="185" y="92" width="105" height="40"/><text class="tiny" x="205" y="117">predict</text><path class="line" d="M290 112 L345 112"/><rect class="box3" x="345" y="92" width="85" height="40"/><text class="tiny" x="362" y="117">robot</text>
+  </g>
+  <g transform="translate(1080,565)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">RWM / RWM-U</text><text class="sub" x="25" y="65">multi-step rollout + uncertainty</text>
+    <rect class="box" x="30" y="92" width="90" height="40"/><text class="tiny" x="51" y="117">s,a</text><path class="line" d="M120 112 L175 112"/><rect class="box2" x="175" y="92" width="115" height="40"/><text class="tiny" x="195" y="117">ensemble</text><path class="line" d="M290 112 L345 112"/><rect class="box3" x="345" y="92" width="85" height="40"/><text class="tiny" x="360" y="117">policy</text>
+  </g>
+
+  <g transform="translate(60,785)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">OpenVLA / RT-X</text><text class="sub" x="25" y="65">policy baseline and multi-robot data</text>
+    <rect class="box" x="30" y="92" width="95" height="40"/><text class="tiny" x="48" y="117">image</text><path class="line" d="M125 112 L180 112"/><rect class="box2" x="180" y="92" width="110" height="40"/><text class="tiny" x="205" y="117">VLA</text><path class="line" d="M290 112 L345 112"/><rect class="box3" x="345" y="92" width="80" height="40"/><text class="tiny" x="362" y="117">act</text>
+  </g>
+  <g transform="translate(570,785)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">Motus / DreamDojo</text><text class="sub" x="25" y="65">latent actions from heterogeneous video</text>
+    <rect class="box" x="30" y="92" width="105" height="40"/><text class="tiny" x="52" y="117">video</text><path class="line" d="M135 112 L190 112"/><rect class="box2" x="190" y="92" width="105" height="40"/><text class="tiny" x="210" y="117">latent a</text><path class="line" d="M295 112 L350 112"/><rect class="box3" x="350" y="92" width="75" height="40"/><text class="tiny" x="366" y="117">robot</text>
+  </g>
+  <g transform="translate(1080,785)">
+    <rect class="card" width="460" height="170"/><text class="head" x="25" y="38">DreamZero / WAM</text><text class="sub" x="25" y="65">future world state and future action</text>
+    <rect class="box" x="30" y="92" width="95" height="40"/><text class="tiny" x="53" y="117">obs</text><path class="line" d="M125 112 L180 112"/><rect class="box2" x="180" y="92" width="115" height="40"/><text class="tiny" x="198" y="117">video+act</text><path class="line" d="M295 112 L350 112"/><rect class="box3" x="350" y="92" width="75" height="40"/><text class="tiny" x="363" y="117">ctrl</text>
+  </g>
+</svg>
