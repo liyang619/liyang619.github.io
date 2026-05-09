@@ -4,7 +4,7 @@ title: "World Model：从强化学习到具身智能的完整入门"
 date: 2026-05-08
 description: "一篇面向初学者和新入门研究者的 world model 入门教程：从基本概念、技术路线、数据集、代码实践到机器人落地。"
 tags: [world-model, embodied-ai]
-permalink: /wm/
+permalink: /wm-tutorial/
 giscus_comments: true
 ---
 
@@ -44,6 +44,11 @@ WAM                       -> 把 future state 和 future action 联合建模
 - **技术路线**：像素生成、latent prediction、结构化 dynamics、3D world、物理引擎各自适合什么。
 - **机器人难点**：为什么真实机器人比游戏和自动驾驶更难，难在哪里。
 - **入门路径**：第一步该读什么 repo、跑什么数据、做什么小实验，而不是一上来追大模型。
+
+<figure>
+  <img src="../assets/img/world-model/world-model-map.svg" class="img-fluid rounded z-depth-1" alt="World model mental map">
+  <figcaption class="caption">本文使用的分类矩阵：横轴是动作条件，纵轴是预测对象。注意 action-conditioned 和视频生成不是互斥关系，UniSim、Cosmos Predict、DIAMOND 等都可以是 action-conditioned video world model。图：本文绘制。</figcaption>
+</figure>
 
 ---
 
@@ -170,6 +175,11 @@ p(o_{t+1} | o_t, a_t)
 
 用这个框架看，很多争论就消失了。Sora 可以是广义 world model，但不是机器人语境下完整的 action-conditioned dynamics model。Cosmos 更接近工业平台，因为它同时在做生成、预测、迁移和物理 AI 数据工具。V-JEPA 2 不生成像素，但它明确把世界状态放在表征空间里预测。
 
+<figure>
+  <img src="../assets/img/world-model/nvidia-cosmos-autoregressive-model-architecture.png" class="img-fluid rounded z-depth-1" alt="NVIDIA Cosmos autoregressive world model architecture">
+  <figcaption class="caption">生成式 world model 的一种工业形态：NVIDIA Cosmos 的自回归世界模型架构示意。它把视频 token、条件信息和未来预测放进统一生成流程中。图源：<a href="https://developer.nvidia.com/blog/advancing-physical-ai-with-nvidia-cosmos-world-foundation-model-platform/">NVIDIA Technical Blog</a>。</figcaption>
+</figure>
+
 ---
 
 ## 4. 学术脉络：从 World Models 到 Foundation World Model 与 WAM
@@ -199,6 +209,11 @@ p(o_{t+1} | o_t, a_t)
 | 2025 | Robotic World Model, RWM-U | 机器人控制里解决 long-horizon drift 与不确定性 |
 | 2025-2026 | Motus, DreamDojo, DreamZero | 从 world model 走向 world action model，同步建模视频和动作 |
 
+<figure>
+  <img src="../assets/img/world-model/method-atlas.svg" class="img-fluid rounded z-depth-1" alt="World model method atlas">
+  <figcaption class="caption">方法速览图：每张小卡片都对应一个论文/方法族的核心预测目标。它不是精确复刻论文架构，而是帮助你读正文时先抓住“输入是什么、模型预测什么、下游怎么用”。图：本文根据各论文/项目方法重绘。</figcaption>
+</figure>
+
 ### 4.1 Ha & Schmidhuber：在梦里训练 agent
 
 2018 年的 *World Models* 是这个方向最有名的起点之一。
@@ -224,6 +239,11 @@ C: Controller
 先学习世界，再学习行动。
 ```
 
+<figure>
+  <img src="../assets/img/world-model/world-model-schematic.svg" class="img-fluid rounded z-depth-1" alt="World Models V-M-C schematic">
+  <figcaption class="caption">Ha &amp; Schmidhuber 的经典 World Models 框架：Vision model 把像素压到 latent，Memory model 在 latent 空间里预测未来，Controller 在这个内部世界里学习动作。图源：<a href="https://worldmodels.github.io/">World Models project page</a>。</figcaption>
+</figure>
+
 ### 4.2 PlaNet 与 Dreamer：latent dynamics 成为主线
 
 DeepMind 的 PlaNet 和 Dreamer 系列把这个思想工程化。
@@ -238,6 +258,11 @@ Dreamer 的核心结构可以理解成：
                                       v
                                   actor-critic
 ```
+
+<figure>
+  <img src="../assets/img/world-model/dreamer-method.svg" class="img-fluid rounded z-depth-1" alt="Dreamer method diagram">
+  <figcaption class="caption">Dreamer 系列的核心 method 图：从真实 replay 中学 RSSM latent dynamics，然后在 latent imagination rollout 里训练 actor-critic。图：本文根据 PlaNet/Dreamer 系列方法重绘。</figcaption>
+</figure>
 
 它的关键不是重建漂亮画面，而是让 latent space 对控制有用。Dreamer V2 用离散 latent 在 Atari 上取得强结果，Dreamer V3 强调“一套超参数跨大量任务”，成为 model-based RL 里最重要的基线之一。
 
@@ -254,6 +279,11 @@ policy prior
 ```
 
 只要这三个头对，latent 长什么样都可以。
+
+<figure>
+  <img src="../assets/img/world-model/muzero-method.svg" class="img-fluid rounded z-depth-1" alt="MuZero method diagram">
+  <figcaption class="caption">MuZero 的 method 图：representation network 把观测历史变成 latent state，dynamics network 在 latent 里展开，prediction network 输出 policy prior/value。它不要求重建像素，只要求对搜索和决策有用。图：本文根据 MuZero 方法重绘。</figcaption>
+</figure>
 
 这给 world model 一个很重要的启发：对 agent 来说，“真实地还原世界”不一定是最优目标。更高效的目标可能是“预测和决策有关的未来”。
 
@@ -282,6 +312,11 @@ visible context -> predictor -> future representation
 
 I-JEPA 从图像开始，V-JEPA 推到视频，V-JEPA 2 进一步强调物理理解、预测和机器人规划。Meta 对 V-JEPA 2 的定位很明确：它是通向 Advanced Machine Intelligence 的 world model 组件，而不是一个视频生成器。
 
+<figure>
+  <img src="../assets/img/world-model/jepa-method.svg" class="img-fluid rounded z-depth-1" alt="JEPA method diagram">
+  <figcaption class="caption">JEPA / V-JEPA 的 method 图：模型不去生成未来像素，而是让 context encoder 和 predictor 去匹配 future observation 的表征。这样训练目标更聚焦语义、几何和物理状态。图：本文根据 JEPA / V-JEPA 方法重绘。</figcaption>
+</figure>
+
 这条路线和 Sora/Cosmos/Genie 的差异很根本：生成式路线问“下一帧长什么样”，JEPA 路线问“下一步世界状态怎么变”。
 
 ### 4.6 Genie / UniSim / Cosmos：world model 变成 foundation model
@@ -291,6 +326,16 @@ I-JEPA 从图像开始，V-JEPA 推到视频，V-JEPA 2 进一步强调物理理
 Genie 是这一波的关键节点。Genie 1 从无标注 2D 平台游戏视频里学习 latent action，让静态图片变成可交互环境。Genie 2 进一步提出 large-scale foundation world model：给一张图，就能生成可被人类或 agent 操作的 3D 环境。它的意义不是游戏本身，而是把 world model 变成 agent 的训练场。
 
 UniSim 则把互联网视频、机器人数据、游戏和导航数据统一到一个可控视频预测框架里。它说明了一个重要方向：不同来源的数据虽然 action space 不同，但都可以转成“当前观测 + 条件 -> 未来观测”的问题。
+
+<figure>
+  <img src="../assets/img/world-model/genie-method.svg" class="img-fluid rounded z-depth-1" alt="Genie method diagram">
+  <figcaption class="caption">Genie / UniSim 类方法的关键：从无动作标签视频中学 latent action，再用 latent action 条件化未来视频生成，使模型从“被动视频预测”走向“可交互世界”。图：本文根据 Genie / UniSim 方法重绘。</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/img/world-model/genie2-result.png" class="img-fluid rounded z-depth-1" alt="Genie 2 result example">
+  <figcaption class="caption">Genie 2 的结果示意：从单张输入图像生成可交互 3D 世界，强调的是“可被 agent 操作的环境”，而不只是单段视频。图源：<a href="https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/">Google DeepMind Genie 2 blog</a>。</figcaption>
+</figure>
 
 Cosmos 更像工业版答案。NVIDIA 把 world model 做成平台：Cosmos Predict 负责未来视频预测，Cosmos Transfer 负责风格/域迁移，Cosmos Reason 负责物理 AI 推理，再接 Isaac、Omniverse 和 GR00T。这里 world model 不再是单篇论文里的模块，而是机器人和自动驾驶数据工厂的一部分。
 
@@ -308,6 +353,11 @@ policy 不利用模型误差
 ```
 
 RWM 的核心在于多步自回归训练，让模型在训练阶段就面对自己的预测误差。RWM-U 进一步加入 ensemble uncertainty，用多个预测头估计 epistemic uncertainty。policy 在模型里训练时，对高不确定性区域加惩罚，避免跑进模型没见过、但奖励看起来很高的“幻想区域”。
+
+<figure>
+  <img src="../assets/img/world-model/rwm-method.svg" class="img-fluid rounded z-depth-1" alt="Robotic World Model method diagram">
+  <figcaption class="caption">Robotic World Model / RWM-U 的 method 图：多步 self-forcing 缓解 rollout drift，ensemble uncertainty 告诉 policy 哪些预测区域不可靠。图：本文根据 RWM / RWM-U 方法重绘。</figcaption>
+</figure>
 
 这条线的重要性在于：它把 world model 从“生成未来”拉回到“能不能训练出真实可部署的 policy”。对 locomotion、manipulation 这类任务，可靠性比视觉效果更重要。
 
@@ -330,6 +380,11 @@ video-action joint prediction
 DreamDojo 更偏 foundation robot world model。它用大规模第一视角人类视频预训练，通过 continuous latent actions 解决无动作标签的问题，再在目标机器人数据上 post-train。它强调 contact-rich、dexterous task 的可控模拟，并通过蒸馏把交互速度推到实时附近。
 
 DreamZero 则把这个思想推到 policy 端。它提出 World Action Model（WAM）：基于预训练 video diffusion backbone，同时预测未来世界状态和机器人动作。相比 VLA 只做 action regression，WAM 用视频作为 dense supervision，让模型学习物理运动和动作后果。DreamZero 的一个标志性结果是把 14B 自回归视频扩散模型优化到闭环控制频率，并在新任务、新环境和跨 embodiment 上显示出比传统 VLA 更强的泛化。
+
+<figure>
+  <img src="../assets/img/world-model/wam-method.svg" class="img-fluid rounded z-depth-1" alt="World Action Model method diagram">
+  <figcaption class="caption">World Action Model 的 method 图：同一个 backbone 同时预测未来视频和未来动作。视频提供 dense physical supervision，动作头把这种“想象”接回闭环控制。图：本文根据 WAM / DreamZero / Motus 类方法重绘。</figcaption>
+</figure>
 
 这批论文说明了一个新趋势：world model 不再只是 policy 旁边的 simulator，而是 policy 本身的一部分。
 
@@ -428,6 +483,11 @@ GR00T            -> 人形机器人策略
 ```
 
 这就是为什么 Cosmos 值得重点关注：它不只是一个模型，而是一个完整的工程平台。对算法工程师来说，平台化意味着你的贡献可以落到视频生成、多模态理解、物理仿真、CUDA 优化、机器人数据生成、自动驾驶评测等多个可见模块上。
+
+<figure>
+  <img src="../assets/img/world-model/nvidia-cosmos-platform.jpg" class="img-fluid rounded z-depth-1" alt="NVIDIA Cosmos world foundation model platform">
+  <figcaption class="caption">Cosmos 的重点不是单个视频模型，而是 physical AI 数据、生成、评测和后训练平台。图源：<a href="https://developer.nvidia.com/blog/advancing-physical-ai-with-nvidia-cosmos-world-foundation-model-platform/">NVIDIA Technical Blog</a>。</figcaption>
+</figure>
 
 ### 6.2 Google DeepMind Genie：可交互世界作为 agent 训练场
 
@@ -607,6 +667,11 @@ Level 6: Target robot expert data
 
 这也解释了 latent action 的重要性。互联网视频和人类视频没有机器人 action label，但相邻帧之间隐含了某种动作或意图。模型如果能自监督抽取 latent action，就能把无标注视频变成更接近 world model 训练的数据。
 
+<figure>
+  <img src="../assets/img/world-model/open-x-embodiment-data.png" class="img-fluid rounded z-depth-1" alt="Open X-Embodiment dataset robot embodiments">
+  <figcaption class="caption">真实机器人数据最宝贵的地方不只是“视频”，而是视频、动作、本体状态、语言和 embodiment 的对齐。Open X-Embodiment 展示了多机器人数据为什么会成为 VLA/WAM 的基础设施。图源：<a href="https://robotics-transformer-x.github.io/">Open X-Embodiment / RT-X project page</a>。</figcaption>
+</figure>
+
 ### 9.2 常用数据集：从哪里开始
 
 可以按“离机器人控制有多近”来选数据：
@@ -629,6 +694,11 @@ Level 6: Target robot expert data
 ### 9.3 数据格式：world model 最终吃什么
 
 如果目标是 VLA/WAM，就需要尽早熟悉 RLDS 格式。Open X-Embodiment 和 BridgeData V2 的关键不是“怎么下载”，而是理解每条 episode 里到底有什么：
+
+<figure>
+  <img src="../assets/img/world-model/open-x-embodiment-overview.png" class="img-fluid rounded z-depth-1" alt="Open X-Embodiment overview">
+  <figcaption class="caption">Open X-Embodiment / RT-X 的核心思想：把不同机器人、不同实验室、不同任务的数据统一到可以训练大 VLA / WAM 的格式里。图源：<a href="https://robotics-transformer-x.github.io/">Open X-Embodiment / RT-X project page</a>。</figcaption>
+</figure>
 
 ```text
 episode
@@ -664,6 +734,11 @@ episode
 ### 10.1 一个真实闭环长什么样
 
 一个实际机器人 world model 系统大致长这样：
+
+<figure>
+  <img src="../assets/img/world-model/robot-world-model-stack.svg" class="img-fluid rounded z-depth-1" alt="Robot world model deployment stack">
+  <figcaption class="caption">真实机器人里，world model 通常不是单独“接管一切”，而是夹在状态估计、规划/policy、低层控制和安全层之间。图：本文绘制。</figcaption>
+</figure>
 
 ```text
 传感器观测

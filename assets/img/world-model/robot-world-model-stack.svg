@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Robot world model deployment stack</title>
+  <desc id="desc">A layered robot deployment stack that shows sensors, state estimation, world model, planner or policy, low-level control, and real robot execution.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfdff; }
+      .box { fill: #ffffff; stroke: #d5dde8; stroke-width: 2; rx: 22; }
+      .world { fill: #eef7ff; stroke: #74a8dc; stroke-width: 2.5; rx: 22; }
+      .safety { fill: #fff4e8; stroke: #e5a65f; stroke-width: 2.5; rx: 22; }
+      .title { fill: #0f172a; font: 700 28px Arial, sans-serif; }
+      .body { fill: #334155; font: 21px Arial, sans-serif; }
+      .small { fill: #64748b; font: 18px Arial, sans-serif; }
+      .arrow { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .loop { stroke: #64748b; stroke-width: 3; fill: none; stroke-dasharray: 9 8; marker-end: url(#arrow); }
+      .badge { fill: #f1f5f9; stroke: #cbd5e1; rx: 14; }
+      .badgeText { fill: #334155; font: 17px Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="860"/>
+  <text class="title" x="90" y="62">A practical robot world-model loop</text>
+  <text class="small" x="90" y="94">The model is powerful, but it is only one block inside a real robot system.</text>
+
+  <rect class="box" x="135" y="135" width="1130" height="86"/>
+  <text class="title" x="175" y="171">1. Sensor observations</text>
+  <text class="body" x="175" y="202">RGB, depth, tactile, force, proprioception, timestamps</text>
+
+  <path class="arrow" d="M700 222 L700 265"/>
+  <rect class="box" x="135" y="265" width="1130" height="86"/>
+  <text class="title" x="175" y="301">2. State estimation and alignment</text>
+  <text class="body" x="175" y="332">calibration, robot state, object pose, contact state, action/state synchronization</text>
+
+  <path class="arrow" d="M700 352 L700 395"/>
+  <rect class="world" x="135" y="395" width="1130" height="110"/>
+  <text class="title" x="175" y="431">3. World model</text>
+  <text class="body" x="175" y="463">action-conditioned rollout, reward prediction, uncertainty, failure prediction</text>
+  <rect class="badge" x="920" y="425" width="140" height="36"/><text class="badgeText" x="950" y="449">predict</text>
+  <rect class="badge" x="1075" y="425" width="135" height="36"/><text class="badgeText" x="1102" y="449">filter</text>
+
+  <path class="arrow" d="M700 506 L700 549"/>
+  <rect class="box" x="135" y="549" width="1130" height="86"/>
+  <text class="title" x="175" y="585">4. Planner or policy</text>
+  <text class="body" x="175" y="616">MPC, actor-critic, VLA, diffusion policy, WAM</text>
+
+  <path class="arrow" d="M700 636 L700 679"/>
+  <rect class="safety" x="135" y="679" width="1130" height="86"/>
+  <text class="title" x="175" y="715">5. Low-level control and safety layer</text>
+  <text class="body" x="175" y="746">joint controller, impedance, collision monitor, speed/force limits, e-stop</text>
+
+  <path class="arrow" d="M700 766 L700 807"/>
+  <rect class="box" x="405" y="807" width="590" height="42"/>
+  <text class="body" x="548" y="835">Real robot execution</text>
+
+  <path class="loop" d="M1030 828 C1300 810 1325 160 1266 166"/>
+  <text class="small" x="1058" y="795">new observations close the loop</text>
+</svg>
