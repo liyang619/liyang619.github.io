@@ -2,7 +2,7 @@
 layout: none
 title: "Embodied AI and Autonomous Laboratories Tutorial"
 date: 2026-07-18
-description: "HTML slides for the FB06 tutorial at the China New Materials Conference, covering embodied AI, world models, and self-driving laboratories."
+description: "A tutorial on embodied AI for self-driving laboratories, covering the motivation and current state of autonomous labs, the core embodied intelligence capabilities required for autonomous experimentation, and future directions for scientific discovery."
 tags: [embodied-ai, world-model, self-driving-lab, tutorial]
 categories: [tutorials]
 permalink: /eai-sdl/
@@ -198,70 +198,18 @@ img,svg{max-width:100%;max-height:100%;}
   <div class="foot"><img src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-white.png" alt="上海交通大学"><span class="rt">TUTORIAL · 2026</span></div>
 </section>
 
-<!-- 2 · 个人简介 -->
-<section class="slide">
-  <div class="eyebrow">ABOUT ME</div>
-  <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">02</span></div>
-  <div class="frame">
-    <div class="topbar reveal"><h2>个人简介</h2><span class="labtag">ABOUT ME</span></div>
-    <div style="display:grid;grid-template-columns:500px 1fr;gap:56px;margin-top:26px;height:664px;">
-      <div style="display:flex;flex-direction:column;gap:26px;">
-        <div class="reveal d1" style="background:var(--tint);border-top:5px solid var(--blue);padding:36px 34px;text-align:center;">
-          <div style="font-family:var(--f-cjk);font-weight:900;font-size:56px;color:var(--char);letter-spacing:.08em;">李 阳</div>
-          <div style="font-family:var(--f-mono);font-size:20px;color:var(--char-dim);letter-spacing:.14em;margin-top:6px;">YANG LI</div>
-          <div style="margin-top:24px;font-family:var(--f-cjk);font-weight:700;font-size:25px;color:var(--char);">助理教授 @ 上海交通大学</div>
-          <div style="font-family:var(--f-cjk);font-size:19px;color:var(--char-dim);margin-top:5px;">John Hopcroft 计算机科学中心</div>
-          <div style="margin-top:16px;font-family:var(--f-cjk);font-weight:700;font-size:25px;color:var(--char);">顾问 @ 上海人工智能实验室</div>
-          <div style="font-family:var(--f-cjk);font-size:19px;color:var(--char-dim);margin-top:5px;">物理智能中心</div>
-        </div>
-        <div class="reveal d2">
-          <div style="font-family:var(--f-cjk);font-weight:700;font-size:26px;color:var(--blue);border-bottom:2.5px solid var(--blue);padding-bottom:9px;margin-bottom:18px;">研究方向</div>
-          <ul class="blist" style="gap:13px;"><li>多智能体系统</li><li>具身智能</li><li>AI4Science</li></ul>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;justify-content:space-between;">
-        <div class="reveal d1">
-          <div style="font-family:var(--f-cjk);font-weight:700;font-size:26px;color:var(--blue);border-bottom:2.5px solid var(--blue);padding-bottom:9px;margin-bottom:14px;">工作经历</div>
-          <div style="display:grid;grid-template-columns:250px 1fr;row-gap:10px;font-family:var(--f-cjk);font-size:21px;color:var(--char);line-height:1.5;">
-            <div style="font-family:var(--f-mono);color:var(--blue);">2026.01 – 至今</div><div>上海交通大学 计算机学院　长聘教轨助理教授</div>
-            <div style="font-family:var(--f-mono);color:var(--blue);">2025.04 – 2025.12</div><div>华为 · 伦敦研究所　研究科学家（Research Scientist）</div>
-            <div style="font-family:var(--f-mono);color:var(--blue);">2025.01 – 2025.03</div><div>华为 · 伦敦研究所　算法实习生</div>
-            <div style="font-family:var(--f-mono);color:var(--blue);">2021.04 – 2021.10</div><div>华为云　算法实习生</div>
-          </div>
-        </div>
-        <div class="reveal d2">
-          <div style="font-family:var(--f-cjk);font-weight:700;font-size:26px;color:var(--blue);border-bottom:2.5px solid var(--blue);padding-bottom:9px;margin-bottom:14px;">教育背景</div>
-          <div style="display:grid;grid-template-columns:250px 1fr;row-gap:10px;font-family:var(--f-cjk);font-size:21px;color:var(--char);line-height:1.5;">
-            <div style="font-family:var(--f-mono);color:var(--blue);">2022.09 – 2025.03</div><div>博士 · 计算机科学　曼彻斯特大学</div>
-            <div style="font-family:var(--f-mono);color:var(--blue);">2019.09 – 2022.06</div><div>硕士 · 信息与通信工程　中国科学院大学 / 上海科技大学</div>
-            <div style="font-family:var(--f-mono);color:var(--blue);">2015.09 – 2019.06</div><div>本科 · 数字媒体技术　大连理工大学</div>
-          </div>
-        </div>
-        <div class="reveal d3">
-          <div style="font-family:var(--f-cjk);font-weight:700;font-size:26px;color:var(--blue);border-bottom:2.5px solid var(--blue);padding-bottom:9px;margin-bottom:16px;">代表性成果</div>
-          <ul class="blist" style="gap:12px;font-size:22px;">
-            <li>IROS QRC 2025 四足机器人挑战赛<b>冠军</b>、杰出表现奖</li>
-            <li>NeurIPS / ICML / TRO 等顶会顶刊审稿人，任 <b>IROS 2026 Associate Editor</b></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3 · 目录 -->
+<!-- 2 · 目录 -->
 <section class="slide agenda">
   <div class="eyebrow">CONTENTS</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">03</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">02</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>目录</h2><span class="labtag">CONTENTS</span></div>
     <div class="toc">
-      <div class="toc-row reveal d1"><div class="toc-no">01</div><div><div class="toc-cn">背景介绍</div><div class="toc-en">Introduction</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>04 – 08</div></div>
-      <div class="toc-row reveal d2"><div class="toc-no">02</div><div><div class="toc-cn">自主实验室现状</div><div class="toc-en">State of Self-Driving Labs</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>09 – 14</div></div>
-      <div class="toc-row reveal d3"><div class="toc-no">03</div><div><div class="toc-cn">面向自主实验室的具身智能基础</div><div class="toc-en">Perception · Manipulation · Agent · Multi-Agent</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>15 – 29</div></div>
-      <div class="toc-row reveal d4"><div class="toc-no">04</div><div><div class="toc-cn">总结</div><div class="toc-en">Summary</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>30 – 32</div></div>
+      <div class="toc-row reveal d1"><div class="toc-no">01</div><div><div class="toc-cn">背景介绍</div><div class="toc-en">Introduction</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>03 – 07</div></div>
+      <div class="toc-row reveal d2"><div class="toc-no">02</div><div><div class="toc-cn">自主实验室现状</div><div class="toc-en">State of Self-Driving Labs</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>08 – 13</div></div>
+      <div class="toc-row reveal d3"><div class="toc-no">03</div><div><div class="toc-cn">面向自主实验室的具身智能基础</div><div class="toc-en">Perception · Manipulation · Agent · Multi-Agent</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>14 – 28</div></div>
+      <div class="toc-row reveal d4"><div class="toc-no">04</div><div><div class="toc-cn">总结</div><div class="toc-en">Summary</div></div><div class="toc-meta"><br></div><div class="toc-pg"><span class="lead">PAGE</span>29 – 31</div></div>
     </div>
   </div>
 </section>
@@ -270,7 +218,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide divider">
   <div class="eyebrow">SECTION 01</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">04</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">03</span></div>
   <img class="dgate" src="/assets/html/tutorials/eai-sdl/assets/sjtu-gate-blue.png" alt="">
   <div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;">
     <div class="reveal d1">
@@ -290,7 +238,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第一部分 · 背景介绍</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">05</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">04</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>AI4Science：假设生成已规模化，验证卡在物理实验</h2><span class="labtag">AI4SCIENCE</span></div>
     <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:52px;margin-top:24px;height:560px;align-items:center;">
@@ -329,7 +277,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第一部分 · 背景介绍</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">06</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">05</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>什么是自主实验室？</h2><span class="labtag"><br></span></div>
     <div class="subhead reveal d1"><p><strong>自主实验室把“设计—执行—表征—分析”连成闭环：AI 决定下一步实验，机器人完成实验操作，并将结果反馈给 AI 迭代。</strong></p><p></p></div>
@@ -376,7 +324,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第一部分 · 背景介绍</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">07</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">06</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>为什么自主实验室需要具身智能</h2><span class="labtag">WHY EMBODIED</span></div>
     <div class="subhead reveal d1">现有自主实验室的“执行”层多是<b>预定义自动化</b>；真实、开放的科学实验需要<b>通用的具身能力</b>。</div>
@@ -450,7 +398,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第一部分 · 背景介绍</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">08</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">07</span></div>
   <div class="frame" style="top:120px;bottom:80px;display:flex;align-items:center;justify-content:center;">
     <img class="reveal" src="/assets/html/tutorials/eai-sdl/fig/多智能体示意图.png" alt="具身智能、大模型多智能体与具身多智能体示意图" style="max-width:100%;max-height:100%;object-fit:contain;">
   </div>
@@ -460,7 +408,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide divider">
   <div class="eyebrow">SECTION 02</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">09</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">08</span></div>
   <img class="dgate" src="/assets/html/tutorials/eai-sdl/assets/sjtu-gate-blue.png" alt="">
   <div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;">
     <div class="reveal d1">
@@ -480,7 +428,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第二部分 · 自主实验室现状</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">10</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">09</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>从自动化到自主：历史不是从 LLM 开始的</h2><span class="labtag">TIMELINE</span></div>
     <div class="subhead reveal d1">自主实验室的核心思想<b>早于大模型</b>；自主性是一步步递进的。</div>
@@ -506,7 +454,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第二部分 · 自主实验室现状 · 论文精读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">11</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">10</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>Mobile Robotic Chemist：物理闭环的开山之作</h2><span class="labtag">Burger et al. · Nature 2020</span></div>
     <div class="pside" style="grid-template-columns:2fr 1fr;height:660px;">
@@ -525,7 +473,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第二部分 · 自主实验室现状 · 论文精读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">12</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">11</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>ORGANA：自然语言驱动的机器人实验助手</h2><span class="labtag">Darvish et al. · Matter 2025</span></div>
     <div class="pside" style="grid-template-columns:560px 1fr;height:660px;">
@@ -544,7 +492,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第二部分 · 自主实验室现状 · DEMO</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">13</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">12</span></div>
   <div class="frame" style="top:140px;bottom:70px;display:flex;flex-direction:column;">
     <div class="topbar reveal" style="flex:none;"><h2>ORGANA：真实化学实验演示</h2><span class="labtag">Darvish et al. · Matter 2025 · 官方视频</span></div>
     <div class="reveal d1" style="flex:1;min-height:0;margin-top:18px;display:flex;align-items:center;justify-content:center;">
@@ -557,7 +505,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第二部分 · 自主实验室现状</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">14</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">13</span></div>
   <div class="frame" style="top:132px;bottom:68px;">
     <div class="topbar reveal"><h2>具身科学智能体　Embodied Science Agent</h2><span class="labtag"><br></span></div>
     <div class="subhead reveal d1" style="font-size:25px;margin-top:12px;line-height:1.42;">我们提出了<b>首个具身科学智能体</b>，通过创新的<b>具身科学统一接口</b>统一整合智能体系统与异构物理设备具身控制（如机器人、各类化学设备等），结合<b>贝叶斯优化</b>和 <b>3D 虚拟人交互</b>，实现从文献调研、实验执行、科学发现的端到端自动化自主实验室科研流程。</div>
@@ -601,7 +549,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide divider">
   <div class="eyebrow">SECTION 03</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">15</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">14</span></div>
   <img class="dgate" src="/assets/html/tutorials/eai-sdl/assets/sjtu-gate-blue.png" alt="">
   <div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;">
     <div class="reveal d1">
@@ -622,7 +570,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 感知</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">16</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">15</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>感知（一）：实验室是视觉模型的分布外世界</h2><span class="labtag">PERCEPTION</span></div>
     <div class="subhead reveal d1">难在<b>透明、反光、细小、密集</b>，而且“状态”比“类别”更重要。</div>
@@ -643,7 +591,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 感知</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">17</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">16</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>感知（二）：三个尚未解决的难点</h2><span class="labtag">PERCEPTION</span></div>
     <div class="reveal d2" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:30px;height:480px;">
@@ -690,7 +638,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">18</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">17</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>具身智能前沿热点：VLA · World Model · World Action Model</h2><span class="labtag">CONCEPTS</span></div>
     <div class="reveal d2" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;margin-top:30px;height:490px;">
@@ -748,7 +696,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作 · 论文解读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">19</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">18</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>π0.7：可操控、有涌现能力的通用机器人基础模型</h2><span class="labtag">Physical Intelligence · 2026</span></div>
     <div class="pside" style="grid-template-columns:2fr 1fr;height:660px;">
@@ -767,7 +715,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作 · DEMO</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">20</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">19</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>VLA 走到哪了：π0.7 演示</h2><span class="labtag">Physical Intelligence · 2026 · 官方视频</span></div>
     <div class="subhead reveal d1">π 系列 VLA 的最新一代：加入记忆、世界模型与上下文提示——<b>无需微调，开箱完成未见任务</b>。</div>
@@ -788,7 +736,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作 · 论文解读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">21</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">20</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>DreamZero：联合预测“视频 + 动作”</h2><span class="labtag">Ye et al. (NVIDIA GEAR) · 2026</span></div>
     <div class="pstack" style="height:610px;">
@@ -806,7 +754,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作 · DEMO</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">22</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">21</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>World Action Model 走到哪了：DreamZero 演示</h2><span class="labtag">NVIDIA GEAR · 2026 · 官方视频</span></div>
     <div class="subhead reveal d1">联合预测“未来视频 + 动作”，7 Hz 实时闭环——<b>对未见任务的泛化超过 SOTA VLA 两倍以上</b>。</div>
@@ -827,7 +775,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 操作</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">23</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">22</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>操作小结：实验室缺的是可学习的数据闭环</h2><span class="labtag">MANIPULATION</span></div>
     <div class="subhead reveal d1">不是泛泛“需要更多数据”，而是缺少<b>可训练、可复用、可验证</b>的操作数据闭环。</div>
@@ -850,7 +798,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 具身智能体</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">24</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">23</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>具身智能体：为什么还需要这一层</h2><span class="labtag">EMBODIED AGENT</span></div>
     <div class="reveal d1" style="margin-top:18px;border:2px solid var(--blue);background:var(--tint);padding:14px 28px;text-align:center;font-family:var(--f-cjk);font-size:24px;color:var(--blue);line-height:1.4;">长程任务的残酷算术：单步成功率 95%，40 步连乘后只剩 ≈ <b style="font-weight:900;">13%</b>——必须有一层专门负责“不掉链子”</div>
@@ -900,7 +848,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 具身智能体 · 论文精读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">25</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">24</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>ASPIRE：自改进、把失败沉淀成技能库</h2><span class="labtag">Lu et al. (NVIDIA GEAR) · 2026</span></div>
     <div class="pside" style="grid-template-columns:1060px 1fr;height:680px;">
@@ -917,7 +865,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 具身智能体 · 论文精读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">26</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">25</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>ASPIRE：从失败中长出可复用的技能</h2><span class="labtag">Lu et al. (NVIDIA GEAR) · 2026</span></div>
     <div class="pside" style="grid-template-columns:675px 1fr;height:660px;">
@@ -935,7 +883,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 具身多智能体协作</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">27</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">26</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>多智能体：实验室不是一台机器人</h2><span class="labtag">MULTI-AGENT</span></div>
     <div class="subhead reveal d1">真实实验室是<b>异构具身多智能体</b>场景，单机器人视角天然不够。</div>
@@ -958,7 +906,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 多智能体协作 · 论文精读</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">28</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">27</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>RoCo：LLM 驱动的对话式多机器人协作</h2><span class="labtag">Mandi et al. · 2023</span></div>
     <div class="pstack" style="height:660px;">
@@ -977,7 +925,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第三部分 · 多智能体协作 · 我们的工作</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">29</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">28</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>HOLA：开放自适应多机器人组队</h2><span class="labtag">Li et al. (SJTU) · 2026</span></div>
     <div class="pside" style="grid-template-columns:880px 1fr;height:660px;">
@@ -996,7 +944,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide divider">
   <div class="eyebrow">SECTION 04</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">30</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">29</span></div>
   <img class="dgate" src="/assets/html/tutorials/eai-sdl/assets/sjtu-gate-blue.png" alt="">
   <div class="frame" style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;">
     <div class="reveal d1">
@@ -1015,7 +963,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第四部分 · 总结</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">31</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">30</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>总结</h2><span class="labtag">SUMMARY</span></div>
     <div class="numlist reveal d1" style="margin-top:32px;height:560px;justify-content:space-between;">
@@ -1031,7 +979,7 @@ img,svg{max-width:100%;max-height:100%;}
 <section class="slide">
   <div class="eyebrow">第四部分 · 总结</div>
   <img class="mark" src="/assets/html/tutorials/eai-sdl/assets/sjtu-logo-blue.png" alt="上海交通大学">
-  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">32</span></div>
+  <div class="footbar"><span class="l">上海交通大学 · 具身智能与自主实验室</span><span class="pg">31</span></div>
   <div class="frame">
     <div class="topbar reveal"><h2>开放问题与 Takeaway</h2><span class="labtag">OPEN QUESTIONS</span></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px 40px;margin-top:36px;">
