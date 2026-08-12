@@ -2,15 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: Tenure-Track Assistant Professor @ SJTU | Embodied AI · Multi-Agent Systems · AI4Science
+subtitle: Tenure-Track Assistant Professor @ SJTU | Advisor @ Shanghai AI Lab | Multi-Agent Systems · Embodied AI · AI for Science
 
 profile:
   align: right
   image: yang_bio.png
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>John Hopcroft Center for Computer Science</p>
+    <p>AP, John Hopcroft Center for Computer Science</p>
     <p>Shanghai Jiao Tong University</p>
+    <p>Advisor, Physical Intelligence Center</p>
+    <p>Shanghai AI Laboratory</p>
     <p>✉️ yang.li.cs at sjtu dot edu dot cn</p>
 
 
@@ -22,16 +24,12 @@ social: true # includes social icons at the bottom of the page
 
 ## About Me
 
-I am a Tenure-Track Assistant Professor (长聘教轨助理教授) at the [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/about/overview/), Shanghai Jiao Tong University. My research focuses on embodied multi-agent learning and AI applications, especially in AI4Science. My long-term research goal is to develop large-scale embodied agent systems that can reason, collaborate, adapt, and act efficiently in complex real-world scenarios.
+I am a Tenure-Track Assistant Professor (长聘教轨助理教授) at the [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/about/overview/), Shanghai Jiao Tong University. I also serve as an Advisor to the Physical Intelligence Center at Shanghai AI Laboratory. My research lies at the intersection of **embodied AI**, **multi-agent systems**, and **AI for science**. I study how embodied agents can learn to collaborate, adapt to unseen environments and teammates, and operate persistently in the physical world. My long-term goal is to build scalable and trustworthy teams of embodied agents that can reason, coordinate, and accelerate scientific discovery through autonomous experimentation.
 
-Prior to joining SJTU, I was a Research Scientist with the Agent Team at Huawei London Research Center. I obtained my Ph.D. in Computer Science from the University of Manchester, supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). Before that, I received an M.Eng. in Information and Communication Engineering from the University of Chinese Academy of Sciences, jointly trained at [ShanghaiTech University](https://www.shanghaitech.edu.cn/), advised by [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and a B.Eng. in Digital Media Technology from Dalian University of Technology.
+Before joining SJTU, I was a Research Scientist on the Agent Team at Huawei's London Research Center. I received my Ph.D. in Computer Science from the University of Manchester, supervised by [Dr. Wei Pan](https://scholar.google.com/citations?user=GqryWPsAAAAJ&hl) and co-supervised by [Prof. Angelo Cangelosi](https://scholar.google.co.uk/citations?user=NyoHewcAAAAJ&hl=en). I also hold an M.Eng. in Information and Communication Engineering from the University of Chinese Academy of Sciences, with joint training at [ShanghaiTech University](https://www.shanghaitech.edu.cn/) under [Prof. Jun Wang](https://scholar.google.com/citations?user=wIE1tY4AAAAJ&hl=en) and [Prof. Yang Yang](https://scholar.google.com/citations?user=dC5WplwAAAAJ&hl=zh-CN), and a B.Eng. in Digital Media Technology from Dalian University of Technology.
 
-#### Looking for Prospective Students
+#### Join Us
 
-I welcome highly motivated students (undergraduates/masters/PhDs/RAs) interested in multi-agent/robot systems, embodied AI, or AI for Science/Nuclear to join my group. I also welcome interns and research assistants, especially for projects on multi-embodied AI and self-driving labs. If you are interested, please feel free to contact me (yang.li.cs at sjtu dot edu dot cn)!
+My group at SJTU continuously welcomes highly motivated **Ph.D. students, research assistants, and interns**, as well as undergraduate and master's students interested in gaining research experience. In addition, our team at the **Physical Intelligence Center, Shanghai AI Laboratory**, is continuously recruiting **full-time researchers, engineers, and interns**. Our current openings cover embodied AI, multi-agent and multi-robot systems, AI for science, AI for nuclear science, and self-driving laboratories.
 
-**PhD positions are available:** 
-- 2026 intake: **one** Ph.D. position in **AI for Nuclear / AI4Science**, co-supervised with [Prof. Ying Wen](https://scholar.google.com/citations?user=_A1CxG8AAAAJ&hl=en).
-- 2027 intake: **two** Ph.D. positions in (multi-)embodied AI and AI4Science.
-
-Please include your CV, transcript, and a brief note about your research interests when reaching out. 
+If you are interested, please email me at **yang.li.cs at sjtu dot edu dot cn** with your CV and a brief description of your research interests. Student applicants should also include their transcripts.

@@ -8,10 +8,10 @@ middle_name:
 last_name: Li
 email: yang.li.cs@sjtu.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Tenure-Track Assistant Professor at the John Hopcroft Center for Computer Science, Shanghai Jiao Tong University. Research interests include embodied multi-agent learning, AI4Science, and AI4Fusion.
+  Tenure-Track Assistant Professor at the John Hopcroft Center for Computer Science, Shanghai Jiao Tong University, and Advisor to the Physical Intelligence Center at Shanghai AI Laboratory. Research interests include embodied AI, multi-agent learning, multi-robot systems, and AI for science.
 footer_text: >
   Thanks for your visit!!!
-keywords: Yang Li, Shanghai Jiao Tong University, John Hopcroft Center, Embodied AI, Multi-Agent Systems, AI4Science, AI4Fusion, Robotics, Reinforcement Learning
+keywords: Yang Li, Shanghai Jiao Tong University, John Hopcroft Center, Embodied AI, Multi-Agent Learning, Multi-Robot Systems, Open Teaming, AI for Science, AI4Science, AI4Fusion, Robotics, Reinforcement Learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: nu01055.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -187,7 +187,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
