@@ -14,6 +14,7 @@ profile:
     <p>Advisor, Physical Intelligence Center</p>
     <p>Shanghai AI Laboratory</p>
     <p>✉️ yang.li.cs at sjtu dot edu dot cn</p>
+    <p>✉️ Lab: <a href="mailto:yang.li.cs@outlook.com">yang.li.cs@outlook.com</a></p>
 
 
 news: true # includes a list of news items
@@ -32,4 +33,4 @@ Before joining SJTU, I was a Research Scientist on the Agent Team at Huawei's Lo
 
 My group at SJTU continuously welcomes highly motivated **Ph.D. students, research assistants, and interns**, as well as undergraduate and master's students interested in gaining research experience. In addition, our team at the **Physical Intelligence Center, Shanghai AI Laboratory**, is continuously recruiting **full-time researchers, engineers, and interns**. Our current openings cover embodied AI, multi-agent and multi-robot systems, AI for science, AI for nuclear science, and self-driving laboratories.
 
-If you are interested, please email me at **yang.li.cs at sjtu dot edu dot cn** with your CV and a brief description of your research interests. Student applicants should also include their transcripts.
+For admissions, internships, and research-assistant opportunities, please contact our lab at [{{ site.lab_email }}](mailto:{{ site.lab_email }}). Please include your CV, a brief description of your research interests, and your transcripts (for student applicants). You may also reach me at **yang.li.cs at sjtu dot edu dot cn** for academic correspondence.
