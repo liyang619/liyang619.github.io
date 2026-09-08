@@ -14,53 +14,45 @@ students:
   phd:
     - name: Zicai Cui
       image: students/zicai-cui.jpg
-      email: zicaicui@sjtu.edu.cn
       sort_name: Cui Zicai
       affiliation: Shanghai Jiao Tong University
       research: Intelligent Agents
     - name: Zihan Guo
       image: students/zihan-guo.jpg
-      email: guozh29@mail2.sysu.edu.cn
       sort_name: Guo Zihan
       affiliation: Chuangzhi College
       research: Intelligent Agents
       co_supervised_by: Prof. Weinan Zhang
     - name: Zhi Han
       image: students/zhi-han.jpg
-      email: hanzhi_sjtu669@sjtu.edu.cn
       sort_name: Han Zhi
       affiliation: Shanghai Jiao Tong University
       research: Intelligent Agents
     - name: Xiaohan Mao
       image: students/xiaohan-mao.jpg
-      email: mxh1999@sjtu.edu.cn
       sort_name: Mao Xiaohan
       affiliation: Shanghai AI Laboratory · Joint Ph.D. student
       research: Embodied AI
     - name: Junru Song
       image: students/junru-song.jpg
-      email: woodysjr@foxmail.com
       sort_name: Song Junru
       affiliation: Shanghai Jiao Tong University
       research: Embodied Agents
       co_supervised_by: Prof. Ying Wen
     - name: Yang Tang
       image: students/yang-tang.jpg
-      email: 2629535324@sjtu.edu.cn
       sort_name: Tang Yang
       affiliation: Shanghai Jiao Tong University
       research: Embodied Agents
       co_supervised_by: Prof. Weinan Zhang
     - name: Chenyang Wan
       image: students/chenyang-wan.jpg
-      email: cywan@zju.edu.cn
       homepage: https://bryce-wan.github.io/
       sort_name: Wan Chenyang
       affiliation: Shanghai AI Laboratory · Joint Ph.D. student
       research: Embodied AI
     - name: Wenhao Zhang
       image: students/wenhao-zhang.jpg
-      email: wenhao_zhang@sjtu.edu.cn
       homepage: https://github.com/Bluixe
       sort_name: Zhang Wenhao
       affiliation: Shanghai Jiao Tong University
@@ -69,32 +61,27 @@ students:
   master:
     - name: Fanxin Shen
       image: students/fanxin-shen.jpg
-      email: shenzju2022@163.com
       sort_name: Shen Fanxin
       affiliation: Shanghai Jiao Tong University · Master's student, Class of 2026
       research: Intelligent Agents
   intern:
     - name: Wenbo Fei
       image: students/wenbo-fei.jpg
-      email: fei001@sjtu.edu.cn
       sort_name: Fei Wenbo
       affiliation: Shanghai Jiao Tong University · Undergraduate, Class of 2024
       research: Embodied AI
     - name: Yue Xin
       image: students/yue-xin.jpg
-      email: vinkda419@gmail.com
       sort_name: Xin Yue
       affiliation: Beihang University · Graduate student, Class of 2024
       research: Dexterous Manipulation and World Models
     - name: Jiaqi Xu
       image: students/jiaqi-xu.jpg
-      email: dlrbdlmltzzn@sjtu.edu.cn
       sort_name: Xu Jiaqi
       affiliation: Shanghai Jiao Tong University · Undergraduate, Class of 2024
       research: Physical Agents
     - name: Chenxi Zeng
       image: students/chenxi-zeng.jpg
-      email: zengcx2423@mails.jlu.edu.cn
       homepage: https://chenxizeng930.github.io
       sort_name: Zeng Chenxi
       affiliation: Jilin University · Undergraduate, Class of 2023
@@ -138,9 +125,6 @@ students:
                 {% if student.affiliation %}
                   <p class="student-affiliation">{{ student.affiliation }}</p>
                 {% endif %}
-                {% if student.email %}
-                  <p class="student-email" style="overflow-wrap: anywhere; font-size: 0.82rem; margin: 0.5rem 0 0;"><a href="mailto:{{ student.email }}">{{ student.email }}</a></p>
-                {% endif %}
                 {% if student.research %}
                   <p class="student-research"><span class="student-label">Research</span> {{ student.research }}</p>
                 {% endif %}
@@ -165,7 +149,6 @@ Example entry:
   sort_name: Student Name
   affiliation: University · year/program
   image: students/student-name.jpg
-  email: student@example.com
   research: Embodied AI and multi-agent learning
   homepage: https://example.com
   co_supervised_by: Prof. Co-supervisor
