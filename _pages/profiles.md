@@ -16,18 +16,18 @@ students:
       image: students/zicai-cui.jpg
       sort_name: Cui Zicai
       affiliation: Shanghai Jiao Tong University
-      research: Intelligent Agents
+      research: Agent
     - name: Zihan Guo
       image: students/zihan-guo.jpg
       sort_name: Guo Zihan
-      affiliation: Chuangzhi College
-      research: Intelligent Agents
+      affiliation: Shanghai Innovation Institute
+      research: Agent
       co_supervised_by: Prof. Weinan Zhang
     - name: Zhi Han
       image: students/zhi-han.jpg
       sort_name: Han Zhi
       affiliation: Shanghai Jiao Tong University
-      research: Intelligent Agents
+      research: Agent
     - name: Xiaohan Mao
       image: students/xiaohan-mao.jpg
       sort_name: Mao Xiaohan
@@ -63,7 +63,7 @@ students:
       image: students/fanxin-shen.jpg
       sort_name: Shen Fanxin
       affiliation: Shanghai Jiao Tong University · Master's student, Class of 2026
-      research: Intelligent Agents
+      research: Agent
   intern:
     - name: Wenbo Fei
       image: students/wenbo-fei.jpg
