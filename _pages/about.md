@@ -22,7 +22,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 selected_co_papers: true # includes a list of papers marked as "selected_co={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
 ## About Me
 
 I am a Tenure-Track Assistant Professor (长聘教轨助理教授) at the [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/about/overview/), Shanghai Jiao Tong University. I also serve as an Advisor to the Physical Intelligence Center at Shanghai AI Laboratory. My research lies at the intersection of **embodied AI**, **multi-agent systems**, and **AI for science**. I study how embodied agents can learn to collaborate, adapt to unseen environments and teammates, and operate persistently in the physical world. My long-term goal is to build scalable and trustworthy teams of embodied agents that can reason, coordinate, and accelerate scientific discovery through autonomous experimentation.
@@ -34,3 +33,15 @@ Before joining SJTU, I was a Research Scientist on the Agent Team at Huawei's Lo
 My group at SJTU continuously welcomes highly motivated **Ph.D. students, research assistants, and interns**, as well as undergraduate and master's students interested in gaining research experience. In addition, our team at the **Physical Intelligence Center, Shanghai AI Laboratory**, is continuously recruiting **full-time researchers, engineers, and interns**. Our current openings cover embodied AI, multi-agent and multi-robot systems, AI for science, AI for nuclear science, and self-driving laboratories.
 
 For admissions, internships, and research-assistant opportunities, please contact our lab at [{{ site.lab_email }}](mailto:{{ site.lab_email }}). Please include your CV, a brief description of your research interests, and your transcripts (for student applicants). You may also reach me at **yang.li.cs at sjtu dot edu dot cn** for academic correspondence.
+
+<section class="recruitment-notice" aria-labelledby="recruitment-2027-title">
+  <h2 id="recruitment-2027-title">招收 2027 级普博生｜具身智能体方向</h2>
+  <p>研究方向：面向真实物理世界，研究具身智能体的感知—决策—行动闭环、持续交互中的自主适应与自进化。</p>
+  <p>要求如下：</p>
+  <ul>
+    <li>欢迎研究方向相近、英语能力良好的同学申请</li>
+    <li>在 CCF A 类会议或期刊、机器人领域顶级会议或期刊发表过论文者优先</li>
+    <li>目前能够加入课题组实习者优先</li>
+  </ul>
+  <p>请将个人简历、研究兴趣及代表性成果发送至 <a href="mailto:{{ site.lab_email }}">{{ site.lab_email }}</a>。</p>
+</section>
