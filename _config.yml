@@ -16,7 +16,7 @@ keywords: Yang Li, Shanghai Jiao Tong University, John Hopcroft Center, Embodied
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: nu01055.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://liyang619.github.io # the base hostname & protocol for your site
+url: https://liyang.page # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -184,6 +184,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  papers:
+    output: true
+    permalink: /paper/:name/
 
 announcements:
   enabled: true
@@ -213,7 +216,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages/about.md", "_pages/publications.md", "_pages/projects.md", "_pages/blog.md", "_pages/teaching.md", "_pages/profiles.md"]
+include: ["_pages/about.md", "_pages/publications.md", "_pages/paper-archive.md", "_pages/projects.md", "_pages/blog.md", "_pages/teaching.md", "_pages/profiles.md"]
 exclude:
   - bin/
   - CONTRIBUTING.md

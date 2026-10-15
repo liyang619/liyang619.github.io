@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<article class="paper-record">
+  <header class="paper-record-header">
+    <a class="paper-archive-kicker" href="{{ '/paper/' | relative_url }}">Li Yang Paper Archive</a>
+    <h1>{{ page.title }}</h1>
+
+    <p class="paper-authors" aria-label="Authors">
+      {% for author in page.authors %}
+        <span class="paper-author">{{ author.name }}<sup>{{ author.affiliations | join: ',' }}</sup></span>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+
+    {% if page.collective_author %}
+      <p class="paper-collective-author">{{ page.collective_author }}</p>
+    {% endif %}
+
+    <ol class="paper-affiliations">
+      {% for affiliation in page.affiliations %}
+        <li><sup>{{ affiliation.id }}</sup> {{ affiliation.name }}</li>
+      {% endfor %}
+    </ol>
+
+    <div class="paper-facts" aria-label="Archive information">
+      <span class="paper-status">{{ page.status }}</span>
+      <span><strong>Archive ID:</strong> {{ page.archive_id }}</span>
+      <span><strong>Version:</strong> {{ page.archive_version }}</span>
+      <span><strong>Posted:</strong> {{ page.date | date: '%d %B %Y' }}</span>
+      <span>{{ page.pages }} pages</span>
+    </div>
+
+    <div class="paper-actions">
+      <a class="btn btn-primary" href="{{ page.pdf | relative_url }}">
+        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+        Download PDF
+      </a>
+      <a class="btn btn-outline-primary" href="#citation">Cite</a>
+      <a class="btn btn-outline-primary" href="#versions">Version history</a>
+    </div>
+  </header>
+
+  <section class="paper-section" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>{{ page.abstract }}</p>
+  </section>
+
+  <section id="versions" class="paper-section" aria-labelledby="versions-heading">
+    <h2 id="versions-heading">Version history</h2>
+    <div class="table-responsive">
+      <table class="table paper-version-table">
+        <thead>
+          <tr>
+            <th scope="col">Version</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">File</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for version in page.versions %}
+            <tr>
+              <td>{{ version.label }}</td>
+              <td>{{ version.date | date: '%d %B %Y' }}</td>
+              <td>{{ version.note }}</td>
+              <td><a href="{{ version.pdf | relative_url }}">PDF</a> <span class="text-muted">({{ page.file_size }})</span></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <details class="paper-checksum">
+      <summary>File integrity</summary>
+      <p><strong>SHA-256</strong></p>
+      <code>{{ page.sha256 }}</code>
+    </details>
+  </section>
+
+  <section id="citation" class="paper-section" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <p>This manuscript does not yet have an external DOI or arXiv identifier. Please use the permanent archive URL below.</p>
+    <pre><code>{{ page.bibtex | escape }}</code></pre>
+  </section>
+
+  <footer class="paper-record-footer">
+    <p>{{ page.rights }}</p>
+  </footer>
+</article>

@@ -1,0 +1,51 @@
+{% if page.collection == 'papers' %}
+  {% assign paper_pdf_url = page.pdf | absolute_url %}
+  {% assign paper_page_url = page.url | absolute_url %}
+
+  <!-- Scholarly metadata for Google Scholar and other research indexes -->
+  <meta name="citation_title" content="{{ page.title | escape }}">
+  {% for author in page.authors %}
+    <meta name="citation_author" content="{{ author.name | escape }}">
+  {% endfor %}
+  <meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  <meta name="citation_online_date" content="{{ page.date | date: '%Y/%m/%d' }}">
+  <meta name="citation_pdf_url" content="{{ paper_pdf_url }}">
+  <meta name="citation_abstract_html_url" content="{{ paper_page_url }}">
+  <meta name="citation_language" content="en">
+  <meta name="citation_technical_report_institution" content="Shanghai AI Laboratory">
+  <meta name="citation_technical_report_number" content="{{ page.archive_id | escape }}">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": {{ page.title | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "abstract": {{ page.abstract | jsonify }},
+      "author": [
+        {% for author in page.authors %}
+          {
+            "@type": "Person",
+            "name": {{ author.name | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "datePublished": {{ page.date | date: '%Y-%m-%d' | jsonify }},
+      "dateModified": {{ page.date | date: '%Y-%m-%d' | jsonify }},
+      "creativeWorkStatus": {{ page.status | jsonify }},
+      "inLanguage": "en",
+      "url": {{ paper_page_url | jsonify }},
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Li Yang Paper Archive",
+        "value": {{ page.archive_id | jsonify }}
+      },
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": {{ paper_pdf_url | jsonify }},
+        "encodingFormat": "application/pdf",
+        "contentSize": {{ page.file_size | jsonify }}
+      }
+    }
+  </script>
+{% endif %}
